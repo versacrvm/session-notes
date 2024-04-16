@@ -1,0 +1,51 @@
+* {
+  background-color: rgb(8, 52, 37);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #b3c8cf;
+}
+
+h1,
+h2,
+p {
+  color: #f1eedc;
+}
+
+nav,
+footer {
+  background-color: #e5ddc5;
+  padding: 5px;
+  height: 50px;
+}
+
+.hermoine-img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* this is how you leave comments, shortcut: command shift slash, comments are always above the thing you want to comment on */
+
+/* in this case, the section that is above is the one that will be applied */
+
+/* don't use id for styling, we just try it out here with #about-section */
+
+#about-section {
+  background-color: bisque;
+}
+
+.section {
+  background-color: #a34343;
+}
+
+.hermoine-section {
+  background-color: black;
+}
+
+.hermoine-section p {
+  color: red;
+}
