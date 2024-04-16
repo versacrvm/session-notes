@@ -7,7 +7,19 @@ const hoursInput = document.querySelector('[data-js="hours"]');
 const output = document.querySelector('[data-js="output"]');
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    console.log("Hello, World!");
+  const nameValue = nameInput.value;
+  const colorValue = colorInput.value;
+  const hoursValue = hoursInput.value;
+  const hoursNum = Number.parseInt(hoursValue, 10);
+  const story = `
+    "DON'T TOUCH IT, ${nameValue.toUpperCase()}!",
+    I yelled as ${nameValue} was about to touch
+    the walls we had painted ${colorValue} not
+    ${hoursValue} ${hoursNum < 2 ? "hour" : "hours"} ago.
+    I would have expected their memory to
+    last at least ${hoursNum + 1} hours.`;
+
+  output.textContent = story;
 });
